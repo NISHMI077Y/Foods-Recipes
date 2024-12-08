@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.recipe-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Image Styling */
+.recipe-container img {
+  width: 25%;
+  height: auto;
+  border-radius: 8px;
+  align-items: center;
+}
+
+/* Heading Styles */
+.recipe-container h2 {
+  color: #d35400;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.recipe-container h2#what-is-naan {
+  margin-top: 30px;
+}
+
+/* Paragraph Styling */
+.recipe-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* List Styles */
+.recipe-container ul,
+.recipe-container ol {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.recipe-container ul li,
+.recipe-container ol li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-spacing: 0;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Review Section */
+.review-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.review-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
+.rating-stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.rating-stars input {
+  display: none;
+}
+
+.rating-stars label {
+  font-size: 30px;
+  color: #ffdd00;
+  cursor: pointer;
+}
+
+.rating-stars input:checked ~ label,
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+  color: #ffdd00;
+}
+
+.review-section textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.review-section button[type="submit"] {
+  background-color: #d35400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.review-section button[type="submit"]:hover {
+  background-color: #e67e22;
+}
+
+.review-section button[type="cancel"] {
+  background-color: #ccc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.review-section button[type="cancel"]:hover {
+  background-color: #bbb;
+}
+
+/* Video Section */
+.video-section {
+  margin-top: 40px;
+}
+
+.video-section iframe {
+  width: 100%;
+  height: auto;
+  max-width: 560px;
+  border-radius: 8px;
+}

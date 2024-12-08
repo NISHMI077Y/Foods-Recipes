@@ -1,0 +1,99 @@
+body {
+    background-color: #C0C0C0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cookie-image {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cookie-image img {
+    width: 100%;
+    height: auto;
+}
+
+.cookie-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+    font-family: Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    border-left: 6px solid pink;
+    padding-left: 10px;
+}
+
+.cookie-images {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.cookie-images img {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 0.01rem solid #e0e1ed;
+    position: relative;
+    animation: moveUpDown 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+.recipe {
+    display: none;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.recipe h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.recipe ul, .recipe ol {
+    margin-left: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

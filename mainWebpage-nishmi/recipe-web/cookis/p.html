@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../cookis/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Recipes</title>
+    <style>
+        .cookie-images {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .cookie-images img {
+            cursor: pointer;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: .01rem round #e0e1ed;position: relative; /* Required for animation */
+    animation: moveUpDown 2s infinite alternate ease-in-out; /* Animation properties */
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 0; 
+    }
+    100% {
+        top: 20px; 
+    }
+}
+        
+        .cookie-image h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 4.0em;
+            font-style: Courier;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+        .recipes {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        footer{
+            background:#333;
+            color:#fff;
+            text-align:center;
+            position:fixed;
+            bottom:0;
+            width:100%;
+
+        }
+
+       
+    </style>
+</head>
+ <!--create by kaweesha-->
+<body style="background-color:#C0C0C0;">
+    <div class="cookie-image">
+        <img src="pink.jpg" alt="Cookie Recipes">
+
+        <h1>Cookie Recipes</h1>
+    </div>
+    <br><br><br><br>
+    <h2 style="border-left:6px solid pink;"">Just 1 click to 1 recipie</h2>
+    <div class="cookie-images">
+        <img src="chip.jfif" alt="Cookie 1" onclick="showRecipe('recipe1')">
+        <img src="oat.jpg" alt="Cookie 2" onclick="showRecipe('recipe2')">
+        <img src="butter.jpg" alt="Cookie 3" onclick="showRecipe('recipe3')">
+        <img src="chocolate.jfif" alt="Cookie 4" onclick="showRecipe('recipe4')">
+    </div>
+    <div id="recipe1" class="recipe">
+        <h1>Chocolate Chip Cookie Recipe</h1>
+        <h3>Ingredients:</h3>
+        <ul class="ingrediants">
+        <li>2 1/4 cups all-purpose flour</li>
+        <li>1/2 teaspoon baking soda</li>
+        <li>1 cup unsalted butter, room temperature</li>
+        <li>1/2 cup granulated sugar</li>
+        <li>1 cup packed light-brown sugar</li>
+        <li>1 teaspoon salt</li>
+        <li>2 teaspoons pure vanilla extract</li>
+        <li>2 large eggs</li>
+        <li>2 cups semisweet and/or milk chocolate chips</li>
+        <br><br>
+        <li><strong>serving - 25 cookies</strong></li>
+        </ul>
+        <hr>
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Preheat oven to 350°F (175°C).
+            <li>In a small bowl, whisk together the flour and baking soda; set aside.</li>
+            <li>In a large bowl, cream together the butter and sugars until light and fluffy.</li>
+            <li>Add the salt, vanilla, and eggs, and mix until well combined.</li>
+            <li>Gradually add the flour mixture, mixing until just combined.</li>
+            <li>Stir in the chocolate chips.</li>
+            <li>Drop tablespoon-sized balls of dough onto a baking sheet, spacing them about 2 inches apart.</li>
+            <li>Bake until cookies are golden around the edges, but still soft in the center, 8 to 10 minutes.</li>
+            <li>Remove from oven and let cool on baking sheet for 2 minutes; transfer cookies to a wire rack to cool completely.</li>
+        </ol>
+        </div>
+
+        <div id="recipe2" class="recipe">
+            <h1>Oat Cookie Recipe</h1>
+             <h3>Ingredients:</h3>
+                <ul>
+                    <li>2 cups all-purpose flour</li>
+                    <li>1 teaspoon baking soda</li>
+                    <li>1 cup unsalted butter, room temperature</li>
+                    <li>1 cup white sugar</li>
+                    <li>1 cup brown suger</li>
+                    <li>3 cups cooking oats</li>
+                    <li>1 teaspoon salt</li>
+                    <li>2 teaspoons pure vanilla extract</li>
+                    <li>2 large eggs</li>
+                    <li>1 teaspoon ground cinnamon</li>
+                    <li>2 tablespoons water</li>
+                    <br><br>
+                    <li><strong>serving - 25 cookies</strong></li>
+                </ul>
+            <hr>
+     
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Preheat your oven to 350°F (175°C) and line a baking sheet with parchment paper.</li>
+                    <li>In a large bowl, beat the softened butter, brown sugar, and granulated sugar together until creamy and smooth.</li>
+                    <li>In a large bowl, cream together the butter and sugars until light and fluffy.</li>
+                    <li>Add the salt, vanilla, and eggs, and mix until well combined.</li>
+                    <li>Gradually add the flour mixture, mixing until just combined.</li>
+                    <li>After add oats.</li>
+                    <li>Drop tablespoon-sized balls of dough onto a baking sheet, spacing them about 2 inches apart.</li>
+                    <li>Bake until cookies are golden around the edges, but still soft in the center, 8 to 10 minutes.</li>
+                    <li>Remove from oven and let cool on baking sheet for 2 minutes; transfer cookies to a wire rack to cool completely.</li>
+                </ol>
+                </div>
+    
+                <div id="recipe3" class="recipe">
+                    <h1>Butter Cookie Recipe</h1>
+                   <h3>Ingredients:</h3>
+                   <ul>
+                    <li>1 cup unsalted butter, softened</li>
+                    <li>1/2 cup granulated sugar</li>
+                    <li>1 large egg</li>
+                    <li>2 teaspoons vanilla extract</li>
+                    <li>2 1/4 cups all-purpose flour</li>
+                    <li>1/2 teaspoon baking powder</li>
+                    <li>1/4 teaspoon salt
+                    <br><br>
+                    <li><strong>serving - 25 cookies </strong></li>
+                </ul>
+            
+            <hr>
+                <h3>Instructions:</h3>
+                <ol>
+                    <li>Preheat your oven to 350°F (175°C) and line a baking sheet with parchment paper.</li>
+                    <li>In a large bowl, beat the softened butter, granulated sugar, and powdered sugar together until light and fluffy.</li>
+                    <li>Mix in the egg and vanilla extract until well combined.</li>
+                    <li>In another bowl, whisk together the flour, baking powder, and salt.</li>
+                    <li>Gradually add the dry ingredients to the wet mixture, mixing until a dough forms.</li>
+                    <li>Roll the dough into small balls (about 1 tablespoon each) and place them on the prepared baking sheet.</li>
+                    <li>Bake for 10-12 minutes or until the edges are lightly golden. The centers should still be soft.</li>
+                    <li>Let the cookies cool on the baking sheet for a few minutes before transferring them to a wire rack to cool completely.</li>
+                </ol>
+                </div>
+                <div id="recipe4" class="recipe">
+                    <h1>Chocolate Cookie Recipe</h1>
+                    <h3>Ingredients:</h3>
+<ul>
+    <li>1 cup (2 sticks) unsalted butter, softened</li>
+    <li>1 cup packed brown sugar</li>
+    <li>1 cup packed white sugar</li>
+    <li>2 large eggs</li>
+    <li>1 teaspoon vanilla extract</li>
+    <li>3 cups all-purpose flour</li>
+    <li>1 teaspoon baking soda</li>
+    <li>1/2 teaspoon baking powder</li>
+    <li>2 cups semisweet chocolate chips</li>
+    <li>1/4 teaspoon salt
+    <br><br>
+    <li><strong>serving - 25 cookies </strong></li>
+</ul>
+
+<hr>
+<h3>Instructions:</h3>
+<ol>
+    <li>Preheat your oven to 350°F (175°C) and line a baking sheet with parchment paper.</li>
+    <li>In a large bowl, beat the softened butter, granulated sugar, and powdered sugar together until light and fluffy.</li>
+    <li>Mix in the egg and vanilla extract until well combined.</li>
+    <li>In another bowl, whisk together the flour, baking powder, and salt.</li>
+    <li>Gradually add the dry ingredients to the wet mixture, mixing until a dough forms.</li>
+    <li>Fold in the chocolate chips until evenly distributed.</li>
+    <li>Roll the dough into small balls (about 1 tablespoon each) and place them on the prepared baking sheet.</li>
+    <li>Bake for 10-12 minutes or until the edges are lightly golden. The centers should still be soft.</li>
+    <li>Let the cookies cool on the baking sheet for a few minutes before transferring them to a wire rack to cool completely.</li>
+</ol>
+</div>                
+ <script>
+        function showRecipe(recipeId) {
+            // Hide all recipes first
+            var recipes = document.querySelectorAll('.recipe');
+            recipes.forEach(function(recipe) {
+                recipe.style.display = 'none';
+            });
+
+            // Show the selected recipe
+            document.getElementById(recipeId).style.display = 'block';
+        }
+    </script>
+    <br><br><br><br>
+<img src="final.jpg">
+<footer><p>&copy;2024 cookie recipes</p></footer>
+</body>
+</html>
